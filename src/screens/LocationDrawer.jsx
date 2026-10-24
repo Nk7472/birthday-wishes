@@ -51,7 +51,7 @@ export default function LocationDrawer({ reason, busy, onAllow, onStart, onClose
     denied: 'We need your location',
     blocked: 'Location is blocked for this site',
     off: 'Please turn on your location',
-    ready: 'Location saved. You’re all set!',
+    ready: 'Preview is Ready!',
   }[reason];
   const body = {
     denied: 'It is important for the new features we are adding soon, so please let us use it. You can change your mind anytime.',
