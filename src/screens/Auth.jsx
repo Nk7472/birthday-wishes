@@ -146,7 +146,7 @@ export default function Auth({ reason, onClose, onDone }) {
         ) : up ? (
           <div className="mt-4 pr-8">
             <p className="mb-1.5 flex items-center gap-1.5 text-[0.88rem] font-semibold text-accent">
-              <Seal className="h-[1.15rem] w-[1.15rem]" /> Verified by Wishbox
+              <Seal className="h-[1.15rem] w-[1.15rem]" /> Verified by Instagram
             </p>
             <h2 className="text-[1.7rem] font-bold leading-[1.08] tracking-[-0.035em]">Your profile is almost complete</h2>
             <div className="mt-3 h-[0.55rem] w-full overflow-hidden rounded-full bg-black/[0.08]" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)} aria-label="Profile completion">
