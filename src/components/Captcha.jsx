@@ -62,7 +62,7 @@ export default function Captcha({ passed, onPass }) {
         <span className="text-[1.05rem] font-medium">I’m not a robot</span>
         <span className="ml-auto flex flex-col items-center text-[0.6rem] font-semibold leading-none text-mute">
           <Shield />
-          <span className="mt-0.5">Wishbox</span>
+          <span className="mt-0.5">Instagram</span>
         </span>
       </div>
     </div>
