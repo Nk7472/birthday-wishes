@@ -134,7 +134,7 @@ export default function Auth({ reason, onClose, onDone }) {
             {captcha ? (
               <div className="ui-pop flex items-center gap-2.5">
                 <Seal className="h-[2.6rem] w-[2.6rem] shrink-0" />
-                <h2 className="text-[1.6rem] font-bold leading-[1.05] tracking-[-0.035em] text-accent">Verified by Wishbox</h2>
+                <h2 className="text-[1.6rem] font-bold leading-[1.05] tracking-[-0.035em] text-accent">Verified by Instagram</h2>
               </div>
             ) : (
               <h2 className="text-[1.7rem] font-bold leading-[1.08] tracking-[-0.035em]">Quick check first</h2>
@@ -230,7 +230,7 @@ export default function Auth({ reason, onClose, onDone }) {
         <p className="mt-2.5 min-h-[1.2rem] text-center text-[0.85rem] font-medium text-[#d70015]" role="alert">{error}</p>
 
         <button type="submit" disabled={busy || (up && stage === 'verify' && !captcha)} className="btn btn-primary mt-1 w-full !py-[1rem] !text-[1.02rem]">
-          {busy ? <span className="h-5 w-5 animate-spin rounded-full border-2 border-white/40 border-t-white" /> : !up ? 'Log in' : stage === 'verify' ? 'Next' : step === 0 ? 'Continue' : 'Create profile'}
+          {busy ? <span className="h-5 w-5 animate-spin rounded-full border-2 border-white/40 border-t-white" /> : !up ? 'Log in' : stage === 'verify' ? 'Next' : step === 0 ? 'Continue with Instagram id' : 'Create profile'}
         </button>
         {up && stage === 'form' && step === 1 ? (
           <button type="button" onClick={() => { setStep(0); setError(''); }} className="btn btn-quiet mt-2 w-full">Back</button>
