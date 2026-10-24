@@ -1,0 +1,8 @@
+node_modules
+dist
+.harness-out
+.harness-shots
+.env
+.env.*
+!.env.example
+.vercel
