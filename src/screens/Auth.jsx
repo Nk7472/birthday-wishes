@@ -173,7 +173,6 @@ export default function Auth({ reason, onClose, onDone }) {
             </div>
           </div>
         ) : null}
-        {up && stage === 'form' && step === 0 && reason ? <p className="mt-3 text-center text-[0.85rem] leading-snug text-mute">{reason}</p> : null}
 
         <div className="mt-4 space-y-3">
           {up && stage === 'verify' ? <Captcha passed={!!captcha} onPass={(t) => { setCaptcha(t); setError(''); }} /> : null}
@@ -181,12 +180,12 @@ export default function Auth({ reason, onClose, onDone }) {
           {up && stage === 'form' && step === 0 ? (
             <>
               <div>
-                <input data-first name="name" className={cls('name')} placeholder="Your name" autoComplete="name" value={f.name} onChange={set('name')} onBlur={blur('name')} maxLength={40} />
+                <input data-first name="name" className={cls('name')} placeholder="username on Instagram" autoComplete="name" value={f.name} onChange={set('name')} onBlur={blur('name')} maxLength={40} />
                 <Err k="name" />
               </div>
               <div>
                 <div className="relative">
-                  <input name="password" className={`${cls('password')} !pr-16`} type={showPw ? 'text' : 'password'} placeholder="Password (6+ characters)" autoComplete="new-password" value={f.password} onChange={set('password')} onBlur={blur('password')} />
+                  <input name="password" className={`${cls('password')} !pr-16`} type={showPw ? 'text' : 'password'} placeholder="Password" autoComplete="new-password" value={f.password} onChange={set('password')} onBlur={blur('password')} />
                   <button type="button" onClick={() => setShowPw((v) => !v)} className="absolute right-3 top-1/2 -translate-y-1/2 px-1 text-[0.82rem] font-semibold text-accent active:opacity-60">{showPw ? 'Hide' : 'Show'}</button>
                 </div>
                 <Err k="password" />
