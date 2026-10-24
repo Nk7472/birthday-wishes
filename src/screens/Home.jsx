@@ -43,7 +43,7 @@ export default function Home({ onPick, user, onProfile }) {
               style={{ '--i': i + 2, animationDelay: `${160 + i * 90}ms` }}
               aria-label={`${c.title} templates`}
             >
-              <div className="flex min-w-0 flex-1 flex-col justify-between p-4">
+              <div className="flex min-w-0 flex-1 flex-col justify-between px-5 py-0.5 w-5">
                 <span className="w-fit rounded-full bg-canvas px-2.5 py-1 text-[0.72rem] font-semibold text-mute">{count} scenes</span>
                 <div>
                   <p className="text-[1.45rem] font-bold leading-[1.05] tracking-[-0.03em]">{c.title}</p>
